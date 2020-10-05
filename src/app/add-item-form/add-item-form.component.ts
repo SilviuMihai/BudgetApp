@@ -10,7 +10,7 @@ import { BudgetItem } from 'src/shared/models/budget-item.model';
 export class AddItemFormComponent implements OnInit {
 
   @Input() item:BudgetItem = new BudgetItem('',null);
- @Output() formSubmit:EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
+  @Output() formSubmit:EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
   constructor() { }
 
   ngOnInit(): void {
